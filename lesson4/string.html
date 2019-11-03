@@ -1,0 +1,49 @@
+<head>
+    <title>Page</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+
+<body>
+    <script>
+        'use strict'
+        let a = 7;
+        const isPrime = (a) => {
+
+            let count = 0;
+            for (let i = 1; i <= a; i += 1) {
+                if (a % i == 0) {
+                    count += 1;
+                }
+
+            }
+            if (count == 2) {
+                return "true";
+            }
+
+            return "false";
+        };
+        let b = isPrime(a);
+        console.log(b);
+
+    </script>
+
+
+
+    <script>
+        'use strict'
+        const reverse = (a) => {
+            let result = "";
+            for (let i = a.length - 1; i >= 0; i--) {
+                result += a[i];
+            }
+
+            return result;
+        };
+
+        let str = reverse("hello world")
+
+        console.log(str);
+
+    </script>
+
+</body>
