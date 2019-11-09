@@ -5,6 +5,6 @@ function removeByJquery(){
 }
 
 function add(){
-    var card = document.getElementById("words-to-delete");
-    document.body.appendChild(card);
+    var but2 = $("#add-but");
+    but2.after("<h1>Hello, world!</h1>");
 }
